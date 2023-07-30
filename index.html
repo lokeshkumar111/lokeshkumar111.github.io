@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOKESH | PORTFOLIO</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    html based personal portfolio
+  <header>
+    <nav class="navbar" id="nav-menu">
+       <div id="leftDiv"><h1>Lokesh <span style="color:black">Kumar</span></h1></div>
+       <div id="rightDiv">
+        <a href="#" class="nav-link home">Home</a>
+        <a href="#" class="nav-link about">About Me</a>
+        <a href="#" class="nav-link skills">Skills</a>
+        <a href="#" class="nav-link projects">Projects</a>
+        <a href="#" class="nav-link contact">Contact</a>
+        <a href="#" class="nav-link resume" id="resume-button-1">Resume</a> 
+       </div> 
+    </nav>
+  </header>
+
+  <!-- home section -->
+  <div class="homeDiv" id="home">
+    <div id="nameDiv">
+        <p id="introHello" style="text-align: left;">Hello! My name is</p>
+        <h1>Lokesh <span style="color:rgb(250, 248, 248)">Kumar</span></h1>
+        <p id="desgLok">I am a <span style="color:rgb(250, 248, 248)">Full Stack Web Developer<span></p>
+        <button id="resume-button-2">Resume</button>
+    </div>
+    <div id="photoDiv">
+        <img class="home-img" src="./images/lokesh_profile_pic.jpg" alt="lokesh pic" />
+    </div >
+  </div>
+
+  <!-- about section -->
+  <div id="about" class="about section">
+    <h1><span style="color: rgb(10, 157, 202)">About</span> Me</h1>
+    <p>Hello, My name is Lokesh Kumar. I am a passionate and inquisitive person and always try my best to give 100 percent dedication to my work. As a Full Stack Web Developer I want to secure a responsible career opportunity to fully utilize my training and skills while contributing to the success of the company.</p>
+  </div>
+
+  <!-- project section -->
+  <div id="projects">
+    <h1>My <span style="color:white">Projects</span></h1>
+    <div id=projectDiv>
+        <div class="project-card">
+          <img src="./images/dummy_project.png" alt="skill" />
+          <h3 class="project-title">Big Basket</h3>
+          <p class="project-description">BigBasket is an ecommercde website I along with the team of other 4 developer made an as it is clone login/signup > home/landing page > product page / product details page > cart page > payment page</p>
+          <p class="project-tech-stack"><span style="font-weight: bold">Tech Stack: <span>We used HTML, CSS, JavaScript and use local starage for data storing</p>
+          <div>
+            <button class="project-github-link">Github</button>
+            <button class="project-deployed-link">Live</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dummy_project.png" alt="skill" />
+          <h3 class="project-title">Ecotourism Website</h3>
+          <p class="project-description">We created this website by own after facing problem to find local tourist places nearby we took inspiration from karnataka ecotourism website we created login page > home page > destinations page > destination  details page > and payment page </p>
+          <p class="project-tech-stack"><span style="font-weight: bold;">Tech Stack: <span></span>We used HTML, CSS, JavaScript and use JSON Server for data storing</p>
+          <div>
+            <button class="project-github-link">Github</button>
+            <button class="project-deployed-link">Live</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dummy_project.png" alt="skill" />
+          <h3 class="project-title">Online Coffee Shop</h3>
+          <p class="project-description">Online Coffee Shop is the clone of online coffe website Biletti and we cloned whole website as it is flow of the website is login page > home page > product page > product details page > cart page > payment page </p>
+          <p class="project-tech-stack"><span style="font-weight: bold;">Tech Stack: <span></span>We used HTML, CSS, JavaScript and use JSON Server for data storing</p>
+          <div>
+            <button class="project-github-link">Github</button>
+            <button class="project-deployed-link">Live</button>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./images/dummy_project.png" alt="skill" />
+          <h3 class="project-title">Famous Footwear</h3>
+          <p class="project-description">Cloned an ecommerce website famous footwear along with the 4 other developers we cloned this website as it is the flow of the website is login page > home page > product page > product details page > cart page > and the payment page </p>
+          <p class="project-tech-stack"><span style="font-weight: bold;">Tech Stack: <span></span>We used HTML, CSS, JavaScript and use local starage for data storing</p>
+          <div>
+            <button class="project-github-link">Github</button>
+            <button class="project-deployed-link">Live</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- git hub section -->
+  <div id="react-activity-calendar">
+    <h1>GitHub Overview</h1>
+    <div>
+      <h1>This is the gitHub section </h1>
+    </div>
+  </div>
+
+<!-- skills section -->
+  <div id="skill">
+    <h1>Technical <span style="color:white">Skills</span></h1>
+    <div id=skillDiv>
+        <div class="skill-card">
+          <img class="skill-card-img" src="./images/html.png" alt="skill" />
+          <p class="skill-card-name">HTML</p>
+        </div>
+        <div class="skill-card">
+          <img class="skill-card-img" src="./images/css.png" alt="skill" />
+          <p class="skill-card-name">CSS</p>
+        </div >
+        <div class="skill-card">
+          <img  class="skill-card-img" src="./images/js.jpg" alt="skill" />
+          <p class="skill-card-name">JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img  class="skill-card-img" src="./images/html.png" alt="skill" />
+          <p class="skill-card-name">React</p>
+        </div>
+        <div class="skill-card">
+          <img  class="skill-card-img" src="./images/html.png" alt="skill" />
+          <p class="skill-card-name">Bootstrap</p>
+        </div>
+        <div class="skill-card">
+          <img  class="skill-card-img" src="./images/html.png" alt="skill" />
+          <p class="skill-card-name">Node Js</p>
+        </div >
+      <div class="skill-card">
+        <img  class="skill-card-img" src="./images/html.png" alt="skill" />
+        <p class="skill-card-name">Git</p>
+      </div>
+      <div class="skill-card">
+        <img  class="skill-card-img" src="./images/html.png" alt="skill" />
+        <p class="skill-card-name">Post Man</p>
+      </div >
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div id="contact" class="contact section">
+    <h1><span style="color: rgb(10, 157, 202)">Contact</span> Me</h1>
+    <div>
+      <div>
+        <button id="contact-github">GitHub</button>
+        <button id="contact-linkedin">LinkedIn</button>
+      </div>
+      <hr id="blank line"/>
+      <div>
+        <p>Kota, Rajasthan</p>
+        <p id="contact-email">lokeshk.charan3@gmail.com</p>
+        <p id="contact-phone">+91 9414489111</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
