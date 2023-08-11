@@ -203,9 +203,13 @@ body {
     font-size: large;
     border: 1px solid rgb(6, 140, 180);
   }
+  #projectDiv>div>div>button>a{
+    text-decoration: none;
+    color: rgb(6, 140, 180);
+  }
 
   /* skill section styling desktop mode */
-  #skill{
+  #skills{
     background-color: rgb(10, 157, 202);
     padding:50px 20px 50px 20px;
     margin:20px 10px 20px 10px;
@@ -213,7 +217,7 @@ body {
     border-radius: 20px;
   }
 
-  #skill>h1{
+  #skills>h1{
     text-align:center;
   }
   #skillDiv{
