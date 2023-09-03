@@ -170,7 +170,7 @@ body {
     margin: auto;
   }
   #projectDiv>div{
-    width:80%;
+    width:100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     background-color: white;
@@ -206,6 +206,25 @@ body {
   #projectDiv>div>div>button>a{
     text-decoration: none;
     color: rgb(6, 140, 180);
+  }
+
+  /* github section styling */
+  .img1Style{
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .stats>img{
+    align-items:center;
+  }
+  .Github{
+    text-align: center;  
+      margin-top: 40px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
   }
 
   /* skill section styling desktop mode */
@@ -319,9 +338,49 @@ body {
     margin-bottom: 20px
   }
 
-
+.createdLine{
+  position: relative;
+  bottom:5px;
+  left:20%;
+  right: 20%;
+  
+}
 
 /* Responsive design */
+@media screen and (max-width: 350px) {
+  /* github section styling */
+  
+  .img1Style{
+    width: 90%;
+  }
+  .stats>img{
+    width:90%;
+  }
+  .home-about-description{
+    font-size:larger;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  /* github section styling */
+  .img1Style{
+    width: 80%;
+  }
+  .stats>img{
+    width:80%;
+  }
+  .home-about-description{
+    font-size:larger;
+  }
+  #contact>div{
+    /* border: 1px solid red; */
+    font-size:small;
+  }
+  #nameDiv{
+    font-size: large;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Mobile devices */
   .navbar {
@@ -448,6 +507,7 @@ body {
   #projectDiv {
     grid-template-columns: repeat(1, 1fr);
   }
+
   #skillDiv{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -455,6 +515,7 @@ body {
     font-size: small;
   }
 }
+
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* Tablet devices */
