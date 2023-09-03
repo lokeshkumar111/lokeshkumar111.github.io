@@ -341,9 +341,7 @@ body {
 .createdLine{
   position: relative;
   bottom:5px;
-  left:20%;
-  right: 20%;
-  
+  text-align: center;  
 }
 
 /* Responsive design */
