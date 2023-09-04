@@ -178,12 +178,6 @@ body {
     padding: 10px;
     padding-bottom: 20px;
   }
-  #projectDiv>div>img{
-    margin-top: 8px;
-    width:95%;
-    border-radius: 15px;
-    border: 5px solid rgb(10, 157, 202);
-  }
   #projectDiv>div>p{
     text-align: left;
   }
@@ -208,14 +202,44 @@ body {
     color: rgb(6, 140, 180);
   }
 
+  /* style for slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  margin-top: 8px;
+  width:95%;
+  border-radius: 15px;
+  border: 5px solid rgb(10, 157, 202);
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+
   /* github section styling */
   .img1Style{
     width: 80%;
     display: block;
     margin: auto;
+    border: none;
   }
   .stats>img{
     align-items:center;
+  border:none;
   }
   .Github{
     text-align: center;  
@@ -259,6 +283,7 @@ body {
     width:50%;
     height:50%;
     border-radius: 15px 15px 0 0 ;
+    border: none;
   }
 
   /* react activity calendar styling desktop mode */
@@ -343,6 +368,8 @@ body {
   bottom:5px;
   text-align: center;  
 }
+
+
 
 /* Responsive design */
 @media screen and (max-width: 350px) {
