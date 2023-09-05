@@ -70,9 +70,10 @@ function downloadResume(fileUrl) {
     
     setInterval(() => {
       nextSlide();
-    }, 1000); 
+    }, 1000); // Change slide every 3 seconds (adjust this as needed)
   }
   
+  // Initialize the slideshow for each project card
   const projectCards = document.querySelectorAll('.project-card');
   projectCards.forEach((card, index) => {
     startSlideshow(index);
