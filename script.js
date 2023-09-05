@@ -25,23 +25,60 @@ function downloadResume(fileUrl) {
   document.body.removeChild(anchor);
 }
 
-// style for slideshow
-let slideIndex = 0;
-const slides = document.querySelectorAll('.slide');
+// script for slideshow
+// let slideIndex = 0;
+// const slides = document.querySelectorAll('.slide');
 
-function showSlides() {
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 2000); 
-}
+// function showSlides() {
+//     for (let i = 0; i < slides.length; i++) {
+//         slides[i].style.display = 'none';
+//     }
+//     slideIndex++;
+//     if (slideIndex > slides.length) {
+//         slideIndex = 1;
+//     }
+//     slides[slideIndex - 1].style.display = 'block';
+//     setTimeout(showSlides, 2000); 
+// }
 
-showSlides();
+// showSlides();
+  // Function to start the slideshow for a specific card
+  function startSlideshow(cardIndex) {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.project-card')[cardIndex].querySelectorAll('.slide');
+    
+    function showSlide(n) {
+      if (n < 0) {
+        slideIndex = slides.length - 1;
+      }
+      if (n >= slides.length) {
+        slideIndex = 0;
+      }
+      slides.forEach((slide) => (slide.style.display = 'none'));
+      slides[slideIndex].style.display = 'block';
+    }
+    
+    function nextSlide() {
+      showSlide((slideIndex += 1));
+    }
+    
+    function prevSlide() {
+      showSlide((slideIndex -= 1));
+    }
+    
+    showSlide(slideIndex);
+    
+    setInterval(() => {
+      nextSlide();
+    }, 1000); 
+  }
+  
+  const projectCards = document.querySelectorAll('.project-card');
+  projectCards.forEach((card, index) => {
+    startSlideshow(index);
+  });
+
+
 
 
 // Integrate GitHub calendar

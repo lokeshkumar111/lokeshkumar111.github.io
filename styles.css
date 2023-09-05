@@ -239,7 +239,9 @@ img {
   }
   .stats>img{
     align-items:center;
-  border:none;
+    border:none;
+    width:41%;
+  
   }
   .Github{
     text-align: center;  
@@ -384,18 +386,23 @@ img {
   .home-about-description{
     font-size:larger;
   }
+  #user-detail-name{
+    margin-left: -27px;
+  }
 }
 
 @media screen and (max-width: 592px) {
   /* github section styling */
   .img1Style{
-    width: 80%;
+    width: 85%;
+    margin-bottom: 12px;
   }
   .stats>img{
     width:80%;
   }
   .home-about-description{
-    font-size:larger;
+    font-size: x-larger;
+    margin-bottom: 10px;
   }
   #contact>div{
     /* border: 1px solid red; */
@@ -403,6 +410,9 @@ img {
   }
   #nameDiv{
     font-size: large;
+  }
+  #user-detail-name{
+    margin-left: -30px;
   }
 }
 
@@ -538,6 +548,9 @@ img {
   }
   #contact{
     font-size: small;
+  }
+  #user-detail-name{
+    margin-left: -30px;
   }
 }
 
@@ -675,5 +688,9 @@ img {
   }
   #contact{
     font-size: medium;
+  }
+
+  #user-detail-name{
+    margin-left: -30px;
   }
 }
