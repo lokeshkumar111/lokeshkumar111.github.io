@@ -142,7 +142,8 @@ body {
     text-align: center;
   }
   #about>p{
-    text-align:left;
+    /* text-align:left; */
+    text-align:justify;
     margin-top:20px;
     letter-spacing: 1px;
     line-height: 1.6;
@@ -179,7 +180,8 @@ body {
     padding-bottom: 20px;
   }
   #projectDiv>div>p{
-    text-align: left;
+    /* text-align: left; */
+    text-align: justify;
   }
   #projectDiv>div>div{
     display: flex;
